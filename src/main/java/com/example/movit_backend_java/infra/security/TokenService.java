@@ -3,6 +3,7 @@ package com.example.movit_backend_java.infra.security;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
+import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.example.movit_backend_java.domain.user.User;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -20,7 +21,7 @@ public class TokenService {
             Algorithm algorithm = Algorithm.HMAC256(secret);
 
             String token = JWT.create()
-                    .withIssuer("movit-backend-java")
+                    .withIssuer("login-auth-api")
                     .withSubject(user.getEmail())
                     .withExpiresAt(this.generateExpirationDate())
                     .sign(algorithm);
@@ -34,11 +35,11 @@ public class TokenService {
         try {
             Algorithm algorithm = Algorithm.HMAC256(secret);
             return JWT.require(algorithm)
-                    .withIssuer("movit-backend-java")
+                    .withIssuer("login-auth-api")
                     .build()
                     .verify(token)
                     .getSubject();
-        } catch (JWTCreationException exception){
+        } catch (JWTVerificationException exception) {
             return null;
         }
     }

@@ -1,4 +1,4 @@
-package com.example.movit_backend_java.controllers;
+package com.example.movit.backend.java.controllers;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

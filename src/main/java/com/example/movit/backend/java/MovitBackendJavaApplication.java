@@ -1,4 +1,4 @@
-package com.example.movit_backend_java;
+package com.example.movit.backend.java;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

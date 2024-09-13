@@ -1,13 +1,12 @@
-package com.example.movit_backend_java.controllers;
+package com.example.movit.backend.java.controllers;
 
-import com.example.movit_backend_java.domain.user.User;
-import com.example.movit_backend_java.dto.LoginRequestDTO;
-import com.example.movit_backend_java.dto.RegisterRequestDTO;
-import com.example.movit_backend_java.dto.ResponseDTO;
-import com.example.movit_backend_java.infra.security.TokenService;
-import com.example.movit_backend_java.repositories.UserRepository;
+import com.example.movit.backend.java.domain.user.User;
+import com.example.movit.backend.java.dto.LoginRequestDTO;
+import com.example.movit.backend.java.dto.RegisterRequestDTO;
+import com.example.movit.backend.java.dto.ResponseDTO;
+import com.example.movit.backend.java.infra.security.TokenService;
+import com.example.movit.backend.java.repositories.UserRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,6 +1,6 @@
-package com.example.movit_backend_java.repositories;
+package com.example.movit.backend.java.repositories;
 
-import com.example.movit_backend_java.domain.user.User;
+import com.example.movit.backend.java.domain.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

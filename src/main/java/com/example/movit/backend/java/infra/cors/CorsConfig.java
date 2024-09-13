@@ -1,4 +1,4 @@
-package com.example.movit_backend_java.infra.security.cors;
+package com.example.movit.backend.java.infra.cors;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

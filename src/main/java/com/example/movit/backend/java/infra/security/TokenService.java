@@ -1,10 +1,10 @@
-package com.example.movit_backend_java.infra.security;
+package com.example.movit.backend.java.infra.security;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
 import com.auth0.jwt.exceptions.JWTVerificationException;
-import com.example.movit_backend_java.domain.user.User;
+import com.example.movit.backend.java.domain.user.User;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 

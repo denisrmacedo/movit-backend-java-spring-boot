@@ -1,7 +1,7 @@
-package com.example.movit_backend_java.infra.security;
+package com.example.movit.backend.java.infra.security;
 
-import com.example.movit_backend_java.domain.user.User;
-import com.example.movit_backend_java.repositories.UserRepository;
+import com.example.movit.backend.java.repositories.UserRepository;
+import com.example.movit.backend.java.domain.user.User;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

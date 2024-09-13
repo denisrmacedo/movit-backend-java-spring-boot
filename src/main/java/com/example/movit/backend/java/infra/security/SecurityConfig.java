@@ -1,4 +1,4 @@
-package com.example.movit_backend_java.infra.security;
+package com.example.movit.backend.java.infra.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

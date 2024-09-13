@@ -1,4 +1,4 @@
-package com.example.movit_backend_java.domain.user;
+package com.example.movit.backend.java.domain.user;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
